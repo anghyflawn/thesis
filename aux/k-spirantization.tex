@@ -1,0 +1,49 @@
+\savebox{\candone}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{k$_{2}$}}
+    child {node (cman) {C-man}
+      child {node (cl) {[cl]}}}
+    child {node {C-lar}
+      child {node {[vcl]}}} ;
+    \node [left=5em of cman] {C-man$_{1}$} ;
+\end{tikzpicture}}
+
+\savebox{\candtwo}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{k$_{2}$}}
+    child {node (cman) {C-man$_{1}$}
+      child {node (cl) {[cl]}}}
+    child {node {C-lar}
+      child {node {[vcl]}}} ;
+\end{tikzpicture}}
+
+\savebox{\candthree}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{k$_{2}$}}
+    child {node (cman) {C-man$_{1,2}$}
+      child {node (cl) {[cl]}}}
+    child {node {C-lar}
+      child {node {[vcl]}}} ;
+\end{tikzpicture}}
+
+\savebox{\candfour}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{h$_{2}$}}
+    child {node (cman) {C-man$_{1}$}}
+    child {node {C-lar}
+      child {node {[vcl]}}};
+\end{tikzpicture}}
+
+\savebox{\candfive}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{h$_{2}$}}
+    child {node (cman) {C-man$_{1,2}$}}
+    child {node {C-lar}
+      child {node {[vcl]}}};
+\end{tikzpicture}}
+
+
+\begin{OTtableau}{5}
+\OTtoprow[\usebox{\candone}]{\textsc{*Float}(C-man),\textsc{Max}(C-man),\textsc{DepLink}(C-man)([cl]),\textsc{Max}([cl]),\textsc{Uniformity}}
+\OTcandrow{\usebox{\candone}}{*!,,,,}
+\OTcandrow{\usebox{\candtwo}}{,*!,*,,}
+\OTcandrow{\usebox{\candthree}}{,,*!,,*}
+\OTcandrow{\usebox{\candfour}}{,*!,,*,}
+\OTcandrow[\OThand]{\usebox{\candfive}}{,,,*,*}
+\OTdashes{1,2,4}\OTsolids{3}
+\end{OTtableau}

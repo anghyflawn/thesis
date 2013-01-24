@@ -1,0 +1,21 @@
+\begin{tikzpicture}[tree,
+  new/.style={edge from parent/.style={draw,dashed},every child/.style={edge from parent/.style={draw,solid},narrowtree}}]
+\node {Wd$^{0}$}
+    child[sibling distance=12em,new] {node (s1) {\sy}
+      child[level distance=2\level,edge from parent/.style={}] {node (k) {\ipa{k}}}
+      child {node (m1) {\mo}}
+      child {node (m2) {\mo}}
+      child[level distance=2\level,edge from parent/.style={}] {node (z) {\ipa{z $\rightarrow$ s}}}}
+    child[sibling distance=12em,new] {node {\sy}
+      child[level distance=2\level] {node {\ipa{b $\rightarrow$ pj}}}
+      child {node {\mo}
+        child {node {\ipa{a}}}
+        child {node {\ipa{n}}}}
+      child[missing]} ;
+\draw (s1.south) to [bend right] (k.north) ;
+\node [below=2\level of s1] (a) {\ipa{a}} ;
+\join[draw]{m1}{a} \delink;
+\join{s1}{m1}\delink;
+\join[draw]{m2}{a} ;
+\join[draw,dashed]{m2}{z};
+\end{tikzpicture}

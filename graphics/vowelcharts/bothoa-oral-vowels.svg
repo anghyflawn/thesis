@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="260.29141"
+   height="160.42188"
+   id="svg2450"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.2 r9819"
+   version="1.0"
+   sodipodi:docname="bothoa-oral-vowels.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2452">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2458" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.6864198"
+     inkscape:cx="123.16805"
+     inkscape:cy="73.934079"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer3"
+     showgrid="true"
+     units="in"
+     inkscape:window-width="1280"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2460"
+       visible="true"
+       enabled="true"
+       empspacing="5"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2455">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(21.143182,8.359375)">
+    <line
+       x1="-0.44999999"
+       y1="0"
+       x2="203.0103"
+       y2="0"
+       id="line3399"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="0"
+       y1="0"
+       x2="101.25"
+       y2="146.25"
+       id="line3398"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="202.5"
+       y1="0"
+       x2="202.5"
+       y2="146.25"
+       id="line3397"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="100.8"
+       y1="146.25"
+       x2="203.0103"
+       y2="146.25"
+       id="line3396"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="101.25"
+       y1="0"
+       x2="151.065"
+       y2="146.25"
+       id="line3395"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="33.299999"
+       y1="48.743999"
+       x2="202.5"
+       y2="48.743999"
+       id="line3394"
+       style="stroke:#000000;stroke-width:1pt" />
+    <line
+       x1="67.050003"
+       y1="97.497002"
+       x2="202.5"
+       y2="97.497002"
+       id="line5453"
+       style="stroke:#000000;stroke-width:1pt" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Bubbles"
+     transform="translate(20.068182,7.734375)">
+    <path
+       sodipodi:type="arc"
+       id="path3140"
+       sodipodi:cx="2.5"
+       sodipodi:cy="0"
+       sodipodi:rx="27.5"
+       sodipodi:ry="12.5"
+       d="M 30,0 C 30,6.9035594 17.687831,12.5 2.5,12.5 -12.687831,12.5 -25,6.9035594 -25,0 -25,-6.9035594 -12.687831,-12.5 2.5,-12.5 17.687831,-12.5 30,-6.9035594 30,0 z"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       transform="matrix(0.36363635,0,0,1,-10.909091,5)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.38290987;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3967"
+       sodipodi:cx="47.5"
+       sodipodi:cy="42.5"
+       sodipodi:rx="32.5"
+       sodipodi:ry="26.326094"
+       d="M 80,42.5 C 80,57.0395 65.449254,68.826094 47.5,68.826094 29.550746,68.826094 15,57.0395 15,42.5 15,27.9605 29.550746,16.173906 47.5,16.173906 65.449254,16.173906 80,27.9605 80,42.5 z"
+       transform="matrix(0.61138528,-0.40572668,0.57212422,0.43356899,-18.486058,32.118658)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3019"
+       sodipodi:cx="197.5"
+       sodipodi:cy="7.5"
+       sodipodi:rx="17.5"
+       sodipodi:ry="10"
+       d="m 215,7.5 c 0,5.522847 -7.83502,10 -17.5,10 -9.66498,0 -17.5,-4.477153 -17.5,-10 0,-5.5228475 7.83502,-10 17.5,-10 9.66498,0 17.5,4.4771525 17.5,10 z"
+       transform="matrix(1.5714286,0,0,1.25,-105.35715,-4.375)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3126"
+       sodipodi:cx="192.5"
+       sodipodi:cy="47.5"
+       sodipodi:rx="32.5"
+       sodipodi:ry="30.045967"
+       d="m 225,47.5 c 0,16.593929 -14.55075,30.045967 -32.5,30.045967 -17.94925,0 -32.5,-13.452038 -32.5,-30.045967 0,-16.593929 14.55075,-30.045967 32.5,-30.045967 17.94925,0 32.5,13.452038 32.5,30.045967 z"
+       transform="matrix(0.55536899,0.47862909,-0.82282699,0.19777029,124.67576,-66.728378)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3045"
+       sodipodi:cx="212.5"
+       sodipodi:cy="82.5"
+       sodipodi:rx="21.388891"
+       sodipodi:ry="10"
+       d="m 233.88889,82.5 c 0,5.522847 -9.57613,10 -21.38889,10 -11.81276,0 -21.38889,-4.477153 -21.38889,-10 0,-5.522847 9.57613,-10 21.38889,-10 11.81276,0 21.38889,4.477153 21.38889,10 z"
+       transform="matrix(1.2857143,0,0,1,-60.782467,-9.8125)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3062"
+       sodipodi:cx="85"
+       sodipodi:cy="120"
+       sodipodi:rx="25"
+       sodipodi:ry="7.5"
+       d="m 110,120 c 0,4.14214 -11.192881,7.5 -25,7.5 -13.807119,0 -25,-3.35786 -25,-7.5 0,-4.14214 11.192881,-7.5 25,-7.5 13.807119,0 25,3.35786 25,7.5 z"
+       transform="matrix(1.1717478,0.47261585,-0.41155455,1.5037358,29.081679,-101.84263)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3076"
+       sodipodi:cx="207.5"
+       sodipodi:cy="122.5"
+       sodipodi:rx="7.5"
+       sodipodi:ry="20"
+       d="m 215,122.5 c 0,11.04569 -3.35786,20 -7.5,20 -4.14214,0 -7.5,-8.95431 -7.5,-20 0,-11.04569 3.35786,-20 7.5,-20 4.14214,0 7.5,8.95431 7.5,20 z"
+       transform="matrix(1.5,0,0,1,-105,0)" />
+    <path
+       transform="matrix(0.72479337,0,0,0.5925,23.119835,10.09375)"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 30,0 C 30,6.9035594 17.687831,12.5 2.5,12.5 -12.687831,12.5 -25,6.9035594 -25,0 -25,-6.9035594 -12.687831,-12.5 2.5,-12.5 17.687831,-12.5 30,-6.9035594 30,0 z"
+       sodipodi:ry="12.5"
+       sodipodi:rx="27.5"
+       sodipodi:cy="0"
+       sodipodi:cx="2.5"
+       id="path3079"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3099"
+       sodipodi:cx="155"
+       sodipodi:cy="140"
+       sodipodi:rx="45"
+       sodipodi:ry="12.5"
+       d="m 200,140 c 0,6.90356 -20.14719,12.5 -45,12.5 -24.85281,0 -45,-5.59644 -45,-12.5 0,-6.90356 20.14719,-12.5 45,-12.5 24.85281,0 45,5.59644 45,12.5 z" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.36000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3035"
+       sodipodi:cx="57.5"
+       sodipodi:cy="87.5"
+       sodipodi:rx="28.790758"
+       sodipodi:ry="14.849754"
+       d="m 86.290758,87.5 c 0,8.201293 -12.890061,14.84975 -28.790758,14.84975 -15.900697,0 -28.790758,-6.648457 -28.790758,-14.84975 0,-8.201293 12.890061,-14.849754 28.790758,-14.849754 15.900697,0 28.790758,6.648461 28.790758,14.849754 z"
+       transform="matrix(0.66666666,-0.4620962,0.50456806,0.6105502,-32.483036,43.318781)" />
+    <path
+       style="fill:#00a5de;fill-opacity:1;stroke:#000000;stroke-width:0.27000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 100,50.421875 c 17.67767,-5.892556 55,-15 50,25 -2.48069,19.845558 -5,35.000005 -25,45.000005 -14.65202,7.326 -27.5,-15 -30,-25.000005 -5,-20 -10,-40 5,-45 z"
+       id="path3198"
+       inkscape:connector-curvature="0"
+       transform="translate(-20.068182,-7.734375)"
+       sodipodi:nodetypes="sssss" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Symbols"
+     transform="translate(20.068182,7.734375)">
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="-15"
+       y="7.5"
+       id="text5455"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="-17.742188"
+       inkscape:transform-center-y="-3.2226562"><tspan
+         sodipodi:role="line"
+         id="tspan3426"
+         x="-15"
+         y="7.5">i(ː) •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="14.931818"
+       y="42.6875"
+       id="text5471"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5475"
+         x="14.931818"
+         y="42.6875"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus">e(ː) •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="115"
+       y="142.5"
+       id="text5477"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5481"
+         x="115"
+         y="142.5">a •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="19.931818"
+       y="27.6875"
+       id="text5471-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5475-6"
+         x="19.931818"
+         y="27.6875"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus">e •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="24.931818"
+       y="22.6875"
+       id="text3931"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3933"
+         x="24.931818"
+         y="22.6875"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus">i</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="45"
+       y="32.5"
+       id="text5471-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3956"
+         x="45"
+         y="32.5">ɪ •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="190"
+       y="7.5"
+       id="text5459"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3034"
+         x="190"
+         y="7.5">• u(ː)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="170"
+       y="32.5"
+       id="text5465-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3057"
+         x="170"
+         y="32.5">• ʊ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="195"
+       y="32.5"
+       id="text5465-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3080-6"
+         x="195"
+         y="32.5">• o</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.19786167px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="205"
+       y="27.5"
+       id="text3931-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3124"
+         x="205"
+         y="27.5">u</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="35"
+       y="77.5"
+       id="text5471-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3149"
+         x="35"
+         y="77.5">ɛ(ː) •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="54.931816"
+       y="67.6875"
+       id="text5471-9-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3172"
+         x="54.931816"
+         y="67.6875">ɛ •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.68983984px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="60.078964"
+       y="62.533844"
+       id="text3931-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3195"
+         x="60.078964"
+         y="62.533844">ə</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3037"
+       y="77.6875"
+       x="199.93182"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3041"
+         x="199.93182"
+         y="77.6875">• ɔ(ː)</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3049"
+       y="117.5"
+       x="55"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+         y="117.5"
+         x="55"
+         id="tspan3051"
+         sodipodi:role="line">æ(ː) •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="85"
+       y="127.5"
+       id="text3053"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="6.6972656"><tspan
+         sodipodi:role="line"
+         id="tspan3058"
+         x="85"
+         y="127.5">æ̞ •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="200"
+       y="117.5"
+       id="text3064"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3068"
+         x="200"
+         y="117.5">• ɒː</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3070"
+       y="132.5"
+       x="200"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"
+       inkscape:transform-center-x="-2.5117188"
+       inkscape:transform-center-y="-7.7246094"><tspan
+         sodipodi:role="line"
+         id="tspan3074"
+         x="200"
+         y="132.5">• ɒ</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3081"
+       y="142.5"
+       x="135"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3085"
+         x="135"
+         y="142.5">a̠ː •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="155"
+       y="142.5"
+       id="text3087"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3091"
+         x="155"
+         y="142.5">ɑ̟ː •</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3093"
+       y="142.5"
+       x="180"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3097"
+         x="180"
+         y="142.5">ɑː •</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3101"
+       y="72.5"
+       x="115"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3105"
+         x="115"
+         y="72.5">ə •</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="95"
+       y="52.5"
+       id="text3107"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3111"
+         x="95"
+         y="52.5">ɘ •</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3113"
+       y="52.5"
+       x="110"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3117"
+         x="110"
+         y="52.5">ə̝ •</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3121"
+       y="62.6875"
+       x="74.931816"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3125"
+         x="74.931816"
+         y="62.6875">• ø(ː)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       x="85"
+       y="107.5"
+       id="text3127"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3131"
+         x="85"
+         y="107.5">• œː</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3397"
+       y="42.6875"
+       x="199.93182"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3430">• o</tspan></text>
+    <text
+       inkscape:transform-center-y="-3.2226562"
+       inkscape:transform-center-x="-17.742188"
+       sodipodi:linespacing="125%"
+       id="text3422"
+       y="12.6875"
+       x="14.931818"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Plus;-inkscape-font-specification:Gentium Plus"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3428"
+         x="14.931818"
+         y="12.6875">• y(ː)</tspan></text>
+  </g>
+</svg>

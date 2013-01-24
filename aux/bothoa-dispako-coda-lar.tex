@@ -1,0 +1,75 @@
+\savebox{\candone}{\begin{tikzpicture}[narrowtree,baseline=(z.base)]
+\node (z) {\ipa{z̥}}
+  child[missing]
+  child {node {C-pl}
+    child {node {[cor]}}}
+  child[noline] {node {C-lar$_{1}$}};
+\node[right=10em of z] (p) {\ipa{p}}
+  child {node {C-lar$_{2}$}
+    child {node{[vcl]}}}
+  child {node {C-pl}
+    child {node {[lab]}}}
+  child {node {C-man}
+    child {node {[cl]}}} ;
+\node[left=1.5ex of z] {\ipa{di}};
+\node[right=2.1ex of p] {\ipa{ako}} ;
+\end{tikzpicture}}
+
+\savebox{\candtwo}{\begin{tikzpicture}[narrowtree,baseline=(z.base)]
+\node (z) {\ipa{z̥}}
+  child[missing]
+  child {node {C-pl}
+    child {node {[cor]}}}
+  child[missing] ;
+\node[right=10em of z] (p) {\ipa{b}}
+  child {node {C-lar$_{1,2}$}}
+  child {node {C-pl}
+    child {node {[lab]}}}
+  child {node {C-man}
+    child {node {[cl]}}} ;
+\node[left=1.5ex of z] {\ipa{di}};
+\node[right=2.1ex of p] {\ipa{ako}} ;
+\end{tikzpicture}}
+
+\savebox{\candthree}{\begin{tikzpicture}[narrowtree,baseline=(z.base)]
+\node (z) {\ipa{s}}
+  child[missing]
+  child {node {C-pl}
+    child {node {[cor]}}}
+  child[dashesfromparent] {node {C-lar$_{1}$}};
+\node[right=10em of z] (p) {\ipa{p}}
+  child {node {C-lar$_{2}$}
+    child {node{[vcl]}}}
+  child {node {C-pl}
+    child {node {[lab]}}}
+  child {node {C-man}
+    child {node {[cl]}}} ;
+\node[left=1.5ex of z] {\ipa{di}};
+\node[right=2.1ex of p] {\ipa{ako}} ;
+\join[draw,dashed]{z-3}{p-1-1} ;
+\end{tikzpicture}}
+
+\savebox{\candfour}{\begin{tikzpicture}[narrowtree,baseline=(z.base)]
+\node (z) {\ipa{z̥}}
+  child[missing]
+  child {node {C-pl}
+    child {node {[cor]}}}
+  child[missing] ;
+\node[right=10em of z] (p) {\ipa{p}}
+  child {node {C-lar$_{2}$}}
+  child {node {C-pl}
+    child {node {[lab]}}}
+  child {node {C-man}
+    child {node {[cl]}}} ;
+\node[left=1.5ex of z] {\ipa{di}};
+\node[right=2.1ex of p] {\ipa{ako}} ;
+\end{tikzpicture}}
+
+
+\begin{OTtableau}{4}\OTdashes{1,2}\OTsolids{3}
+\OTtoprow[\usebox{\candone}]{\textsc{Max}(C-lar),\textsc{*Flt}(C-lar),\textsc{Uniformity},\textsc{DepLink}(Rt)(C-lar)}
+\OTcandrow{\usebox{\candfour}}{*!,,,}
+\OTcandrow{\usebox{\candone}}{,*!,,}
+\OTcandrow{\usebox{\candtwo}}{,,*!,*}
+\OTcandrow[\OThand]{\usebox{\candthree}}{,,,*}
+\end{OTtableau}

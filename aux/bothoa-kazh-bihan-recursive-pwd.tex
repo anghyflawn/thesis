@@ -1,0 +1,28 @@
+\begin{tikzpicture}[narrowtree,
+  new/.style={edge from parent/.style={draw,dashed},every child/.style={edge from parent/.style={draw,solid},narrowtree}}]
+\node {Wd$''$}
+  child[sibling distance=10em,new] {node (wd1) {Wd$^{0}$}
+    child[missing]
+    child {node (s1) {\sy}
+      child[level distance=2\level,edge from parent/.style={}] {node (k) {\ipa{k}}}
+      child {node (m1) {\mo}}
+      child {node (m2) {\mo}}
+      child[missing]}
+    child[level distance=3\level,edge from parent/.style={}] {node (z) {\ipa{z $\rightarrow$ s}}}}
+  child[new] {node {Wd$^{0}$}
+    child {node {\sy}
+      child[level distance=2\level,sibling distance=4em] {node {\ipa{b $\rightarrow$ pj}}}
+      child {node {\mo}
+        child {node {\ipa{a}}}
+        child {node {\ipa{n}}}}
+      child[missing]}}
+    child[missing];
+\draw (s1.south) to [bend right] (k.north) ;
+\draw (wd1.south) to [bend left=20] (z.north);
+\node [below=2\level of s1] (a) {\ipa{a}} ;
+\join[draw]{m1}{a} \delink;
+\join{s1}{m1}\delink;
+\join[draw]{m2}{a} ;
+\join[draw,dashed]{m2}{z};
+\node[right=.65 of s1,rotate=30] {=};
+\end{tikzpicture}

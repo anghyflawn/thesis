@@ -1,0 +1,51 @@
+\begin{OTtableau}{4}\OTsolids{2}\OTdashes{1,3}
+\OTtoprow[/diz + C-lar (pako)\textsubscript{Wd}/]{\textsc{Share}(\us{h}),\textsc{Contain}(C-lar)(Wd$^{0}$),\textsc{Contain}(\us{h})(Wd$^{0}$),\textsc{Share}(C-lar)}
+\OTcandrow{\begin{tikzpicture}[baseline=(wdmax.base),tree,noline/.style={edge from parent/.style={}}]
+\node (wdmax) {Wd$''$}
+  child {node (ft1) {Ft}
+    child[noline] {node (diz) {\ipa{ˌdiz}}}}
+  child {node (wd0) {Wd$^{0}$}
+      child[noline] {node (pako) {\ipa{ˈpako}}}}
+  child[missing] ;
+\troof{ft1}{diz};
+\troof{wd0}{pako};
+\node (z) [above left=.1em and .3em of diz.south east,tree] {}
+  child {node {C-lar}} ;
+\node (v) [above right=.1em and .5em of pako.south west,tree] {}
+  child {node {C-lar}
+    child {node {[vcl]}}};
+\end{tikzpicture}}{*!,,,*}
+\OTcandrow{\begin{tikzpicture}[baseline=(wdmax.base),tree,noline/.style={edge from parent/.style={}}]
+\node (wdmax) {Wd$''$}
+  child {node (ft1) {Ft}
+    child[noline] {node (diz) {\ipa{ˌdis}}}}
+  child {node (wd0) {Wd$^{0}$}
+      child[noline] {node (pako) {\ipa{ˈpako}}}}
+  child[missing] ;
+\troof{ft1}{diz};
+\troof{wd0}{pako};
+\node (z) [above left=.1em and .3em of diz.south east,tree] {}
+  child {node {C-lar}} ;
+\node (p) [above right=.1em and .5em of pako.south west,tree] {}
+  child {node {C-lar}
+    child {node {[vcl]}}};
+\join[draw,dashed]{z}{p-1};
+\join{z}{z-1}\delink;
+\end{tikzpicture}}{,*!,*,}
+\OTcandrow[\OThand]{\begin{tikzpicture}[baseline=(wdmax.base),tree,noline/.style={edge from parent/.style={}}]
+\node (wdmax) {Wd$''$}
+  child {node (ft1) {Ft}
+    child[noline] {node (diz) {\ipa{ˌdis}}}}
+  child {node (wd0) {Wd$^{0}$}
+      child[noline] {node (pako) {\ipa{ˈpako}}}}
+  child[missing] ;
+\troof{ft1}{diz};
+\troof{wd0}{pako};
+\node (z) [above left=.1em and .3em of diz.south east,tree] {}
+  child {node {C-lar}} ;
+\node (p) [above right=.1em and .5em of pako.south west,tree] {}
+  child {node {C-lar}
+    child {node {[vcl]}}};
+\join[draw,dashed]{z-1}{p-1-1};
+\end{tikzpicture}}{,,*,*}
+\end{OTtableau}

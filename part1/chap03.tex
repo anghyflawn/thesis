@@ -1,0 +1,335 @@
+\chapter{Computational assumptions}
+\label{cha:comp-assumpt}
+
+An important characteristic of this thesis is that although it is mostly focused on highlighting the rôle of phonological representations in accounting for cross\hyp linguistic variation, it also recognizes the power of phonological computation. Representations alone are not sufficient either to provide an explicit analysis or, more importantly, to establish the falsifiability of the proposal.
+
+In this chapter I describe some general properties of the computational system in substance\hyp free phonology, provide some discussion of constraint schemata and in particular the augmentation schema, and conclude by sketching the stratal approach I use to account for morphology\endash phonology interactions.
+
+\section{The power of computation}
+\label{sec:power-computation}
+
+As discussed in \cref{cha:subst-free-phon}, computation is free to manipulate the representations fed into the phonological module in a manner unconstrained by non\hyp phonological considerations. It can ensure that certain types of structures can never be part of surface\hyp phonological representations.  Optimality Theory, coupled with the postulate of Richness of the Base \citep{ot,mccarthy05:_colloq_arabic}, is able to derive differences among inventories solely by computational means, \ie the reranking of the universal constraint set \textsc{Con} \citep{kirchner97:_contr,flemming05:_deriv}. This has contributed to another swing of \posscite{anderson85:_phonol} representation\fshyp computation pendulum towards a more or less explicit assumption that phonological representations are trivial. In other words, in many OT\hyp based approaches representation does not play any explanatory rôle in accounting for cross\hyp linguistic variation in sound patterns (as \citealp{scheer11:_issues} puts it, it has no \enquote{sovereign arbitral award}).
+
+In a substance\hyp free theory, since the interface between phonetics and phonology is language\hyp specific and learned, this postulate cannot be accepted. However, the substance\hyp free approach also recognizes the importance of computation, in contrast to monostratal formalisms \citep[\egm][]{bird-klein,bird1995,scobbie1997,ScobbieColemanBird,coleman98:_phonol,lodge93:_under,Lodge2003931,lodge07:_timin_icelan,lodge09:_fundam_concep_in_phonol}, where computation boils down to the very simple unification procedure, with no cross\hyp linguistic variation. Phonology, in the substance\hyp free view, has both a \enquote{semantics} \citep{pierrehumbert90:_phonol} and a \enquote{syntax} \citep{blaho-diss}, and both can vary non\hyp trivially across languages.
+
+In this thesis I use a stratal flavour of a fairly orthodox variety of Optimality Theory (with a substance\hyp free twist in \textsc{Con}). Specifically, I use a correspondence rather than containment approach to input\endash output faithfulness (\ie \textsc{Max} and \textsc{Dep} rather than \textsc{Parse} and \textsc{Fill}; see \cref{sec:evid-unev-troch} for one piece of analysis where correspondence rather than containment is indispensable). I do not use constraint families introduced to account for opacity effects and morphology\endash phonology interactions, such as output\endash output correspondence \citep[\egm][]{benua97:_trans}, comparative markedness \citep[\egm][]{compmark}, sympathy \citep[\egm][]{mccarthy-doy}, or indexed constraints \citep[\egm][]{fukazawa97:_japan,pater00:_non_englis,pater09:_morph}. Part of the reason for this is that the data I consider here do not really give conclusive evidence that would allow us to choose one of these approaches over the other. In more general terms, however, I share \posscite{bermudez-oterong} aspiration to derive the relevant effects from a small number of general principles, such as those furnished by the stratal approach.
+
+\subsection{The relevance of computational complexity}
+\label{sec:choice-approach}
+
+The representational proposals made in this thesis are in principle independent of the computational framework; the results could be reproduced in most derivational theories as well as in OT. For this reason, I will not dwell in detail on the choice of the framework here.
+
+Although this is done partly for reasons of focus, it is worth pointing out that without substantive restrictions on the computation the choice between most approaches current in the literature does not make much of a difference. That is, if we reject formally arbitrary restrictions on possible patterns, such as functionally driven fixed rankings in OT or universal markedness rules à~la Chapter 9 of \citet{spe}, the most of the frameworks used in phonological theory are more or less equally powerful (see \citealt{Heinz-2011-CPF,Heinz-2011-CPGLF} for a brief but exhaustive overview).
+
+This is an important point, since Optimality Theory has been criticized as empirically unviable because of its high computational complexity \citep[\eg by][]{vaux:_why}; note, however, that rule\hyp based phonology has been subject to a similar attack by \citet{coleman98:_phonol}. (For overviews of issues in complexity theory and their relevance to linguistic scholarship, see, for instance, \citealt[§3.5.5]{fitch10} and \citealt{heinz11:_senten_word_compl}.)
+
+In fact, as \citet{Heinz-2011-CPF,Heinz-2011-CPGLF} points out, in terms of expressivity most phonological frameworks have been shown to describe regular relations; this applies to SPE\hyp style phonology and \posscite{koskenniemi83:_two_morph} closely related two-level phonology \citep{kaplan94:_regul}, Declarative Phonology \citep[§3]{Heinz-2011-CPGLF}, and (some versions of) Optimality Theory \citep{karttunen98},\footnote{\citet{Heinz-2011-CPGLF} points out that classical parallel OT may be \emph{more} restrictive than SPE\hyp style phonology, because it cannot describe certain opaque patterns. The relevance of this argument in a stratal version of OT is less clear-cut.} while \citet{Graf10FOLLI} achieves a similar result for Government Phonology. There are thus no significant advantages to any of these approaches with respect to the complexity of the set of grammars they predict to be possible.
+
+Another relevant computational aspect is the tractability of certain problems (\eg the generation problem or the alternation learning problem) in different phonological frameworks. For instance, it has been claimed that the generation problem in OT is NP-hard \citep{eisner97:_effic_optim_theor,eisner00:_easy_hard_const_rankin_optim_theor,wareham98:_system,idsardi06:_optim_theor}; similar results have also been obtained for (certain versions of) SPE\hyp equivalent two\hyp level phonology \citep{barton87:_comput} and declarative phonology \citep{Heinz-2011-CPGLF}. Optimality Theory is also often attacked for its postulation of infinite candidate sets.
+
+These problems, however, are far from fatal for phonological theorizing. First, as so often emphasized in the literature, results in complexity theory routinely involve worst cases, which does not preclude the existence of more computationally benign versions of a given theory. Second, the infinite\hyp set criticism is considerably weakened by results such as those of \citet{Rig04,riggle09:_gener,riggle09:_violat_optim_theor,seeker09:_optim_theor}, who show that the application of well\hyp understood optimization algorithms allows us to dispense with actually generating the infinite set of candidates \citep[\cf also][]{hammond09}. Third, \citet{riggle09:_optim_theor,heinz09:_evaluat_compl_optim_theor} present some results which moderate the NP-hard status of OT. Fourth, efficient solutions to some (versions) of important problems in OT have in fact been proposed (see \eg \citealp{jarosz06:_richn}).\footnote{Interestingly, \citet{jarosz06:_richn} argues that Richness of the Base is crucial for the operation of the algorithm; it is thus possible that it is more than an aprioristic construct introduced purely for theory\hyp internal reasons \citep[contrast][§1.6.4]{hale-reiss2008}.}
+
+Perhaps most importantly, it would appear that the choice of computational framework does not appear to play much of a rôle if computational complexity is taken to be the main criterion. Interesting restrictions on complexity appear to come not from the choice of framework but from identifiable restrictions on the type of patterns that can conceivably be interpreted as phonological: as emphasized by \citet[p.~162]{Heinz-2011-CPGLF}, \blockquote{[t]he learning problem is hampered by hypothesis spaces that are too expressive [\ldots]. If the right restrictive properties are discovered, it is possible that they may contribute to the learnability of phonological patterns [\ldots]} (\cf also the discussion in \cref{sec:crazy-rules} above). In other words, putting a restriction on the complexity of relevant algorithms requires more attention to the type of patterns that phonology concerns itself with and to the possible types of relationships between phonological elements: that is, more attention to \emph{representation} \citep{wareham98:_system,heinz11:_tier_stric_local_const_phonol}. This further suggests that representations are a deserving object of phonological study \emph{per se}.
+
+Thus, the focus of this thesis is mainly on the study of representations. I will use a version of Optimality Theory here in order to provide an explicit analysis, but the representational results should, in principle, be adaptable to a number of other computational frameworks. Nevertheless, in the following sections I provide some discussion of some technical aspects of the version of OT used here that will be of importance for the analysis in \crefrange{cha:pembrokeshire-welsh}{cha:disc-altern-analys}.
+
+\subsection{Towards substance-free computation}
+\label{sec:subst-free-comp}
+
+Computation in a substance\hyp free phonological theory is encapsulated and thus free of non\hyp phonological concerns. In practice most non\hyp phonological factors encountered in OT\hyp based literature are either based on phonetic considerations (reflecting some properties of the human vocal tract, perceptual system and so on) or are used to transfer morphosyntactic information that appears to be relevant for the phonology. In this section I concentrate on the former type of phonological non\hyp autonomy.\footnote{For some discussion of the status of morphosyntactic labels in phonology, see above \cref{sec:doma-spec-interf}.}
+
+Functional biases can be introduced into an OT computation in two different ways: via constraint formulations and via constraint rankings. In this thesis I assume that neither of these devices is in line with a substance\hyp free approach: all rankings are in principle free, and there are no substantive restrictions on the make\hyp up of the set \textsc{Con}.
+
+\subsubsection{No fixed rankings}
+\label{sec:no-fixed-rankings}
+
+Fixed rankings, such as the peak and margin hierarchies of \citet{ot} or their ranking metacondition \dom{\textsc{Faith}(Root)}{\textsc{Faith}(Affix)}, are used to make sure that certain structures are always preferred over others. For instance, they can be deployed to make sure that (\emph{ceteris paribus}) a higher\hyp sonority nucleus is preferred to a low\hyp sonority one, or that \enquote{less marked} places of articulation are preferred as outcomes of neutralization to more marked ones. There are two types of objections to this approach.
+
+One, argued in detail by \citet[§§5.2.2, 5.4, 6.2.3]{delacy2006}, concerns the fact that fixed rankings cannot derive certain attested patterns of markedness conflation, and are therefore inferior to an approach relying on stringent sets of constraint violations. This is a valid argument, as long as the alternative theory can reproduce the markedness hierarchy effects demonstrated by \citet{delacy2006}. As I discuss in \cref{sec:mark-hier-contr}, the present approach is able to do so, despite the differences in formalism.
+
+Another argument arises from the architecture of substance\hyp free phonology. By definition, the existence of a \enquote{fixed ranking}, \ie a ranking that is found in all languages, can only be established if we can compare constraints across languages. Since constraints are inevitably constraints on representations, they are not directly comparable in this manner, because the representations mentioned by these constraints are essentially contentless labels: there is nothing that guarantees a \enquote{[coronal]} feature in language $L_{1}$ to be in any sense \enquote{the same} as a \enquote{[coronal]} feature in language $L_{2}$. Consequently, the only way to establish such fixed rankings would be through substance, by stating them in a way that requires a constraint $C_{1}$ referring to a structure that is \emph{implemented} in some particular way to always dominate a similar constraint $C_{2}$ referring to a structure implemented in some other way. Since implementation is not part of the phonology under a substance\hyp free approach, and referring to non\hyp phonological realities is a violation of modularity, fixed rankings cannot be part of the substance\hyp free computational machinery.
+
+\subsubsection{The importance of constraint schemata}
+\label{sec:import-constr-schem}
+
+Another way of restricting the computational possibilities of an OT grammar is ensuring that certain \enquote{unmotivated} types of constraints are absent from the universal set \textsc{Con}. Since, by hypothesis, the set \textsc{Con} is universal, a candidate can be excluded if \textsc{Con} does not include a constraint that favours that candidate. The question, then, is the internal organization of the constraint set.
+
+The key issue is whether it is possible to have any principled substantive restrictions on the structure of constraints. Consider the question of the existence of final obstruent voicing \citep{yu04:_explain_final_obstr_voicin_lezgian,blevins,delacy2006,kiparsky06:_amphic_progr,kiparsky08:_univer}. It is commonly agreed that this process is either highly unlikely \citep{yu04:_explain_final_obstr_voicin_lezgian,blevins} or impossible \citep{kiparsky08:_univer}, at least as the result of a pattern enforcing obligatory neutralization of laryngeal contrasts in word\hyp final position. The hypothesis is thus that such neutralization is effected by a constraint of the form *[F],\footnote{I ignore the precise mechanism used to restrict the neutralization to word\hyp final position.} perhaps of the same family as the constraint enforcing place neutralization in the same position \citep[although see][]{lombardi01:_why_place_voice}. The non\hyp existence of final voicing is then explained by the fact that \textsc{Con} contains an appropriate constraint *[+voice] but not *[$-$voice].\footnote{The example is purely illustrative. See \citet{delacy2006} for a possible analysis of final voicing in terms of a sonority increase driven by moraicity.} This \enquote{constraint\hyp tailoring} approach, however, raises two questions.
+
+First, as discussed above, since features are not comparable across languages, it is probably not possible to formulate such a restriction in any case in a substance\hyp free framework. Second, consider the case of \enquote{final devoicing} in German. Normally seen as a relatively trivial devoicing process, it has been argued by \citet[\emph{et passim}]{iverson07:_domain_and_direc_in_evolut} to represent the addition of a [spread glottis] laryngeal feature at the right edge of words. If this analysis is correct, \textsc{Con} should provide for some device (in all probability a constraint, call it \textsc{Add}) promoting the appearance of [spread glottis] at word edges. If such a type of constraint is available, it is not clear why a similar constraint cannot exist for [voice] rather than [spread glottis].
+
+\enquote{Explanations} proposed for the non\hyp existence of *[$-$voice]\textrbracket\textsubscript{Wd} and \textsc{Add}([voice]) are usually functional or historical: voiced sounds are poorly perceptible in word\hyp final position \citep[\egm][]{steriade97:_phonet}, and the addition of glottal spreading is a grammaticalization of utterance- or phrase\hyp final glottaling \citep{hock99:_final}. However, these explanations are not valid in substance\hyp free phonology: there is nothing in the theory to exclude the existence of the \enquote{incorrect} constraints.
+
+Following \citet{pulleyblank06:_minim_ug,moren-foa}, I suggest that this is not necessarily a bad result. The computation provides the resources for constraint construction in the form of \emph{constraint schemata}: the existence of concrete instantiations of these schemata is a matter of learning. (Like \citealp{pulleyblank06:_minim_ug}, I remain non\hyp committal on whether the schemata are part of language\hyp specific knowledge, \ie Universal Grammar, or emerge from domain\hyp general learning.) In other words, if good evidence can be found for the existence of a constraint \emph{schema}, then the learner is free to produce several constraints of the same form, filling the variable slots as required by the ambient data. Considerations of functional utility or factorial typology do not come into the equation.
+
+Note that this amounts to a denial of the universality of \textsc{Con}: it is not true that all languages have the same constraints, since the representations over which these constraints hold are not comparable in any case. The universality of the set of schemata is also an open question, the answer to which depends on their status as parts of UG or phenomena emergent from non\hyp linguistic learning.\footnote{In practice, the commitment to the universality of \textsc{Con} is not always upheld, in particular with reference to morphological phenomena, such as \posscite{kurisu} \textsc{RealizeMorpheme} or \posscite{pater09:_morph} \enquote{constraint cloning}. Such constraints must make reference to blatantly language\hyp specific categories, and are in essence indistinguishable from constraint schemata. A schematic approach to \textsc{Con} is also explored by \citet{smith04:_makin}.}
+
+The question thus becomes one of the constraint formalism, which is what establishes the schemata. Normally, constraints are stated in some variety of first\hyp order predicate logic, and are at the same time not very explicit about the type of representations used. In this thesis, when giving formal definitions of constraints, I will use a variety of model theory as applied to OT by \citep{potts02:_model_ot}, extending their proposal (as they themselves suggest) by the use of hybrid logic \citep{blackburn00:_repres,areces01:_bring,brauner08:_hybrid}. The advantage of the formalism here is that it makes the representational structure much more explicit than is usually the case when stating OT constraints.
+
+In the next section I discuss some of the types of constraints and their interactions, including the less usual ones, that I will use in the present thesis.
+
+\section{Some constraint families}
+\label{sec:some-constr-famil}
+
+In this section I concentrate on three types of constraints and constraint interactions that will be of importance for the analysis that follows. Specifically, I discuss the interpretation of constraints referring to complex structures, the augmentation constraint schema, and the architecture of faithfulness constraints (with specific reference to \textsc{MaxLink} and \textsc{DepLink} constraints).
+
+\subsection{Constraints on complex structures}
+\label{sec:constr-compl-struct}
+
+In this section I discuss the interpretation of markedness and faithfulness constraints referring to complex structures. I will argue that markedness constraints must be interpreted non\hyp exhaustively and that faithfulness constraints on complex structures should be part of \textsc{Con}. The argumentation is both formal and phonological.
+
+\subsubsection{Non\hyp exhaustive markedness}
+\label{sec:nonhyp-exha-mark}
+
+One important issue in a privative representational theory based on underspecification is the interpretation of constraints that mention only a subset of a given structure. Consider a PSM structure \featurestring{\rt, C-laryngeal, [voiced]}. Assume that we also have markedness constraints of the very general form *[F], with the schema given in \cref{def:star-f}, \cf \citet{potts02:_model_ot}.
+
+\begin{constraint}\label{def:star-f}
+\consdef{|\pprop{*F}|:=}{\prop{output}\to\neg \pprop{F}}\\
+`It is false that [F] is true at an output node'\footnote{Note that \enquote{node} is here used in the model\hyp theoretic sense, not to refer specifically to autosegmental nodes.}
+\end{constraint}
+
+Given such a definition of *[F], it is obvious that a constraint *C-laryngeal, formulated as in \cref{def:star-c-lar}, is violated by the structure \featurestring{\rt, C-laryngeal, [voice]}, or indeed by any structure which contains the C-laryngeal node, such as \featurestring{\rt, C-lar}.
+
+\begin{constraint}\label{def:star-c-lar}
+\consdef{|\pprop{*C-lar}|:=}{\prop{output}\to\neg \prop{C-lar}}\\
+`It is false that C-lar is true at an output node'
+\end{constraint}
+
+This result is in line with the standard interpretation of markedness constraints on complex structures, \cf for instance \citet{causley99:_compl_optim_theor}. However, it has been suggested \citep[\eg by][]{moren-foa} that it might be desirable to interpret such markedness constraints exhaustively. It is in fact possible to formulate such a constraint in the present framework, as shown in \cref{def:exh-star-c-lar} (the predicate $\top$ is true at every node); to distinguish such constraints from *[F], I will use the \emph{ad hoc} notation **[F].
+
+\begin{constraint}
+  \label{def:exh-star-c-lar}
+\consdef{|\pprop{**C-lar}|:=}{\prop{output} \to \neg(\prop{C-lar}\wedge(\neg\langle\downarrow\rangle\top))}\\
+`It is false that a C-lar output node dominates no nodes'
+\end{constraint}
+
+Note that this constraint is logically more complex than the one given in \cref{def:star-c-lar}, since it imposes an additional requirement. At the very least, it would appear to mean that, on the grounds of parsimony, the existence of the constraint in \cref{def:exh-star-c-lar} should presuppose the existence of the constraint in \cref{def:star-c-lar} but not necessarily vice versa.
+
+However, exhaustive interpretation of markedness constraints presents a more specifically phonological problem: it allows the computation to single out smaller structures as being more highly marked. Consider the tableau in \ref{ex:stringent-violation-tableau}, which uses non\hyp exhaustive evaluation.
+
+\ex.\label{ex:stringent-violation-tableau}Stringent violation sets\\
+\begin{OTtableau}{3}
+\OTtoprow{*Rt,*C-lar,*[voice]}
+\OTcandrow{\featurestring{\rt}}{*,,}
+\OTcandrow{\featurestring{\rt, C-lar}}{*,*,}
+\OTcandrow{\featurestring{\rt, C-lar, [voice]}}{*,*,*}
+\OTdashes{1,2}
+\end{OTtableau}
+
+Under this interpretation, the subset relations of the structures are directly reflected in the subset relations of the violation sets. In other words, this interpretation allows us to use geometric structure to reproduce quite directly the stringent violation sets of \citet{delacy2002,lacy04:_marked_optim_theor,delacy2006}. This is not at all surprising, since in \citeauthor{delacy2006}'s proposal the stringent violation sets emerge from the subset relations of multiple\hyp valued phonological features such as Place (what he calls the $xo$ Theory of markedness).
+
+The advantage of this approach is that no markedness constraint instantiating the *[F] schema of \cref{def:star-f} can favour a bigger structure over a smaller one: unless factors such as more complex markedness constraints or faithfulness are taken into account, \featurestring{\rt, C-lar} will be preferred over \featurestring{\rt, C-lar, [voice]} under any ranking of the *[F] constraints. Thus, structure size translates directly into markedness relationships as defined by the constraint set, in line with the results of \citet{causley99:_compl_optim_theor} and \citet{rice03:_featur}. Consequently, in this thesis I will use the term \emph{marked} to refer to bigger structures, rather than to any other sense of \enquote{markedness} current in the literature. I will call the cluster of properties associated with these bigger structures \citep{rice03:_featur,delacy2006} \enquote{markedness\hyp related behaviour}. For more discussion of these issues, see \cref{sec:mark-hier-contr}.\footnote{I also use the term \enquote{markedness constraint} in the commonly accepted way, for lack of a widespread alternative.}
+
+These results are subverted by the exhaustive interpretation (\ie the **[F]) constraints. The tableau in \ref{ex:exh-tableau} shows how **C-lar can choose \featurestring{\rt, C-lar, [voice]} over a smaller structure.
+
+\ex.\label{ex:exh-tableau}Exhaustive evaluation subverts markedness\\
+\begin{OTtableau}{6}
+\OTtoprow{**Root,**C-lar,*[voice],**[voice],*C-lar,*Root}
+\OTcandrow{\featurestring{\rt}}{*!,,,,,*}
+\OTcandrow{\featurestring{\rt, C-lar}}{,*!,,,*,*}
+\OTcandrow[\OThand]{\featurestring{\rt, C-lar, [voice]}}{,,*,*,*,*}
+\OTdashes{1,3,4,5}\OTsolids{2}
+\end{OTtableau}
+
+I hypothesize that this particular situation should be impossible, and that constraints of the form **[F] are not part of \textsc{Con}.
+
+\subsubsection{Complex structure faithfulness}
+\label{sec:compl-struct-faithf}
+
+Another issue related to constraints on complex structure is the interpretation of structures that do not stand in a subset\fshyp superset relationship. Specifically, I argue that if feature co\hyp occurrence constraints are to be admitted into \textsc{Con} in one guise or another, there is nothing to prevent us from introducing faithfulness constraints demanding the preservation of all parts of a complex structure. The existence of such constraints, while not always accepted (\citealp{wolf07:_what_ot}, in reply to \citealp{crowhurst97:_boolean_optim_theor}), has important repercussions for the structure of inventories.
+
+Any OT framework with Richness of the Base faces the necessity of excluding some combinations of features, and normally this is done using (unviolated) feature co\hyp occurrence constraints, although this is not necessary: \citet{moren-serbian,moren-foa} shows extended examples using local constraint conjunction. In the formalism adopted here, a constraint that bans the co\hyp occurrence of features [F] and [G] cannot be expressed using simple logical conjunction, because a node in the model cannot be simultaneously [F] and [G]. Therefore, the proper formulation of the constraint is that shown in \cref{ex:co-occurrence}, which uses the $\downarrow$ relation (corresponding to autosegmental domination) proposed by \citet{potts02:_model_ot}. In this respect, the model used here differs from that of \citet{potts02:_model_ot}, where features are seen as predicates holding directly of root nodes.
+
+\begin{constraint}
+  \label{ex:co-occurrence}
+  \consdef{|\pprop{*[F, G]}|:=}{(\prop{output}\wedge\prop{Root})\to\neg(\langle\downarrow\rangle\pprop{F}\wedge\langle\downarrow\rangle\pprop{G})}\\
+  `An output root node cannot simultaneously dominate a node where [F] is true and a node where [G] is true'
+\end{constraint}
+
+Note that this sort of definition makes a \enquote{feature co\hyp occurrence} constraint essentially indistinguishable from a locally conjoined constraint: it also has to mention the domain (here, the root node) and the consequent contains the conjunction operator $\wedge$. I suggest that \cref{ex:co-occurrence} represents a constraint schema, which can be freely used to ban combinations of an arbitrary number of certain features within a certain domain.\footnote{A potential objection is that such a constraint schema can of course produce wildly implausible constraints such as \enquote{a word cannot contain both a consonant and a vowel}. However, I agree with \citet[footnote 12]{potts02:_model_ot} who are \enquote{extremely skeptical of the idea that formalisms exist that correspond exactly to what linguists wish to say}. In addition, as discussed in \cref{sec:non--importance}, for such constraints to be active in a grammar, the relevant pattern has to arise in some ambient data in the first place, which is highly unlikely.} In the analyses that follow, I will simply refer to \enquote{feature co\hyp occurrence constraints}, without prejudice with respect to the status of local conjunction.
+
+If a constraint schema of this sort exists for markedness, we face the question of whether a parallel argument can be made for faithfulness. Consider the formalization of the simple constraint \textsc{Max}([F]) in \cref{def:max}, adapted from \citet{potts02:_model_ot}.\footnote{Note that this formulation simply requires the existence of an output correspondent, without putting additional restrictions such as the preservation of associations or the number of correspondents. In this respect, it is highly similar to the \enquote{existential faithfulness} constraints proposed by \citet{struijke00:_exist}. This will be important below in the analysis of a pattern involving multiple correspondence in Pembrokeshire Welsh (\cref{sec:evid-unev-troch}).}
+
+\begin{constraint}
+  \label{def:max}
+  \consdef{|\pprop{\textsc{Max}([F])}|:=}{(\prop{input}\wedge\pprop{F})\to(\langle\mathbf{io}\rangle\pprop{F})}\\
+  `If [F] is true at an input node, then that node has an output correspondent where [F] is true'
+\end{constraint}
+
+It is also possible to give an algorithm for a schema producing constraints such as those in \cref{def:multiple-max}.
+
+\begin{constraint}
+  \label{def:multiple-max}
+  \consdef{|\pprop{\textsc{Max}([F, G])}|:=}{(\prop{input}\wedge\prop{Root}\wedge\langle\downarrow\rangle\pprop{F}\wedge\langle\downarrow\rangle\pprop{G})\to(\langle\mathbf{io}\rangle\langle\downarrow\rangle\pprop{F}\wedge\langle\mathbf{io}\rangle\langle\downarrow\rangle\pprop{G})}\\
+  `If an input root node dominates both [F] and [G], then its output correspondent dominates both [F] and \ipa{[G]}'
+\end{constraint}
+
+The schema is entirely parallel to the schema used to produce feature co\hyp occurrence constraints, except that creating the new constraint requires adding a clause not just to the consequent but also to the antecedent. It would thus seem that there is no principled way of prohibiting the existence of such \enquote{multiple faithfulness} constraints. I will therefore assume this is a possible constraint schema.
+
+Note that a similar proposal was made by \citet{crowhurst97:_boolean_optim_theor}, albeit formalized using an implication relation between independently existing faithfulness constraints (similar to constraint conjunction). However, \citet{wolf07:_what_ot} argues that admitting implication into the inventory of constraint connectives produces undesirable results, since some of the types of constraints formed by material implication turn out to be neither faithfulness nor markedness constraints according to the definitions of \citet{moreton2004}, with far\hyp reaching computational consequences.
+
+In the present proposal, multiple faithfulness constraints do not require any status for material implication, since they are in no sense built out of pre\hyp existing constraints: they are just another constraint schema. They are also licit faithfulness constraints, since they do no assign any violation marks to the fully faithful candidate. Thus, I will assume this constraint schema is possible.
+
+The existence of multiple faithfulness constraints has the important consequence that relatively large structures can be singled out of preservation when structures that are their subsets are militated against by a highly ranked constraint. Basically, a ranking \dom{\textsc{Max}([F, G, H])}{\dom{*[F, G]}{\textsc{Max}([F])}} predicts an inventory which includes [F, G, H] but not [F, G], \emph{pace} the proposals of \citet{moren-psm,moren-foa}. Nevertheless, the existence of such a pattern is not entirely unexpected if we accept that more marked (\ie larger) structures can be singled out by faithfulness constraints; \cf \posscite{delacy2006} \enquote{Preservation of the Marked}. For a specific example of the operation of multiple faithfulness, see \cref{sec:stress-relat-altern} below.
+
+\subsection{The augmentation constraint schema}
+\label{sec:licens-enhanc-schema}
+
+In this section I argue for a relatively unrestricted schema of augmentation (licensing,  enhancement) constraints that favour certain types of larger (more marked) structure over smaller (less marked) ones. Such constraints are sometimes treated with caution in phonological theory, but in this section I will suggest that they are relatively harmless conceptually, and will therefore make liberal use of such constraints in the analysis (for instance, see \cref{sec:manner-features,sec:analysis-15,sec:analysis-9,sec:ot-analysis-6}).
+
+The notions of \enquote{licensing}, \enquote{enhancement}, or \enquote{augmentation} have a long history in phonological theory. However, their use is often wound up with non\hyp phonological, functional concerns.\footnote{This is obviously not true of the CVCV tradition of Government Phonology, where licensing is a fundamental mechanism behind many phonological patterns. For reasons of focus I do not discuss this framework here.} For instance, the idea of licensing is often treated as specifically associated with a requirement to associate some sort of \enquote{marked} (understood as \enquote{generally dispreferred}) structure to a \enquote{better} (\ie \enquote{more prominent}) position, as in work by \citet{zoll1998,walker2000,walker05:_weak_trigg_vowel_harmon,walker11:_vowel}. \enquote{Enhancement} is usually understood to increase the (phonetic) salience of certain contrasts \citep{stevens89:_primar_featur_their_enhan_conson,stevens10:_quant,keyser06:_enhan_overl_speec_chain,avery01:_laryn,hall11:_phonol}. A less functional approach is seen in work related to \enquote{augmentation} constraints, understood to increase the complexity of more prominent (\enquote{head}) elements; as \citet{teeple09:_bicon} notes, augmentation constraints can be \emph{monoconditional}, taking into account only the properties of the head as such \citep[\egm][]{smith-diss}, or \emph{biconditional}, comparing the properties of heads and non\hyp heads \citep{dresher-vdhulst,teeple09:_bicon}.
+
+From a formal perspective, of course, the only difference between a markedness constraint (such as that in \cref{def:star-c-lar}) and an augmentation constraint is the absence of the negation in the latter. Consider, as a random example, the following (slightly simplified) constraint from \citet{walker05:_weak_trigg_vowel_harmon}:
+
+\ex.\textsc{License}([$+$high], \ipa{σ́})\\
+`[$+$high] [\ldots] must be associated with a stressed syllable'
+
+In the model\hyp theoretic framework of \citet{potts02:_model_ot}, this could be reformulated as in \cref{def:license}.
+
+\begin{constraint}
+  \label{def:license}
+  \consdef{|\pprop{\textsc{License}([\ensuremath{+}\prop{high}], \pprop{\ipa{σ́}})}|:=}{(\prop{output}\wedge[\prop{\ensuremath{+}high}])\to\langle\uparrow\rangle\prop{stress}}\\
+  `If [\ensuremath{+}high] is true at an output node, that node is dominated by one where the predicate \prop{stress} is true'
+\end{constraint}
+
+There would seem to be is nothing in the formalism to prevent us from having both traditional markedness constraints (with a negation in the consequent) and constraints which require the \emph{presence} of some structure. In fact, quite apart from licensing, enhancement, and augmentation, orthodox OT approaches are rife with constraints that must be formalized with the simple schema $A\to B$ (rather than $A\to\neg B$). Particularly frequent are structure\hyp building constraints in prosody, such as \textsc{Parse} (\enquote{a segment must be dominated by a prosodic node}), \textsc{Onset} (\enquote{a syllable must dominate an onset}, although see \citealp{smith12:_korean}), \textsc{Foot Binarity} (\enquote{a foot must have two syllabic or moraic dependents}), or \textsc{Weight by Position} (\enquote{a node dominated by a coda node must be dominated by a mora node}). Some types of alignment constraints can also be construed as requiring the presence of certain elements in certain contexts. Another possible application of this augmentation schema could be find in a hypothetical OT  implementation of \posscite[']{nevins10:_local} theory of harmony, where agreement is triggered by the requirement for \enquote{needy} vowels to receive a specification for some feature.
+
+It must be pointed out that such augmentation constraints are often criticized in the literature under the guise of \enquote{positive constraints}. However, I would suggest that the concerns do not warrant an outright rejection of the constraint schema.
+
+One particular criticism of \enquote{positive constraints} concerns the Infinite Goodness problem \citep{prince07,kimperng:_posit_harmon_serial},\footnote{A related issue is identified by \citet{delacy2006} as the \enquote{pile\hyp up} problem.} namely the suggestion that if a constraint favours the presence of some structure over its absence, then it is possible for a candidate with an infinite amount of insertions of that structure to be the optimum. However, the existence of the Infinite Goodness problem is entirely contingent on the definition of constraints. \citet{kimperng:_posit_harmon_serial} uses as his example the constraint \textsc{Onset}, which, he claims, can favour the infinite epenthesis of syllables with onsets. However, that is only true for a particular definition of \textsc{Onset}. If we take the definition in \cref{def:onset}, taken verbatim from \citet[p.~369]{potts02:_model_ot}, the problem does not arise at all, since the constraint will be vacuously satisfied by anything that is not an output syllable: it can evaluate syllable nodes, and force the epenthesis of onsets, but it cannot, in and of itself, force the epenthesis of a syllable.
+
+\begin{constraint}
+  \label{def:onset}
+  \consdef{|\pprop{\textsc{Onset}}|:=}{(\prop{output}\wedge\sigma)\to\langle\downarrow\rangle\prop{Ons}}
+\end{constraint}
+
+Other complaints centre on issues such as factorial typology and the prediction of functionally implausible patterns, which I have argued to be of limited relevance. However, augmentation constraints do have a property worthy of investigation, and that is their ability to enforce neutralization towards a more marked structure (noted, for instance, by \citealp{moren01:_distin}). This prediction seems to run counter to the suggestion made in \cref{sec:nonhyp-exha-mark} that markedness constraints do not favour more marked structures over less complex ones.
+
+However, there are some important differences. The existence of neutralization processes that run in \enquote{different directions} depending on the context cannot be doubted (\cf the notion of \enquote{markedness hierarchy conflict} in \citealp{delacy2006}), which means that some neutralization towards bigger structures should be inevitable. Still, the important difference between an exhaustively interpreted markedness constraint and an augmentation constraint is that the latter is satisfied by a much more restricted set of candidates. An exhaustively interpreted markedness constraint (\cref{def:exh-star-c-lar}) simply militates against the appearance of some structure, and can be satisfied either by deletion of that structure or by an arbitrary increase in markedness: the hypothetical constraint **C-lar is satisfied by the candidates \featurestring{\rt}, \featurestring{\rt, C-lar, [voice]}, and \featurestring{\rt, C-lar, [spread glottis]}. On the contrary, an augmentation constraint, say, one that requires C-lar to be augmented (\enquote{enhanced}) by a [spread glottis] feature (perhaps in some contexts), can be satisfied either by deletion or by inserting \emph{just} the element required by the constraint.\footnote{Formally, exhaustive markedness constraints contain the consequent $\langle\downarrow\rangle\top$ `dominates some element', while in augmentation constraints the predicate is more specific.} The augmentation constraints are thus not equivalent to exhaustively interpreted markedness constraints (which I assume not to exist), although their effects are rather similar. I will return to this issue below in the analysis of Welsh in \cref{sec:analysis-10}.
+
+In the remainder of this thesis, I will thus assume that learners can postulate a rather broad range of augmentation constraints, without regard to functional considerations such as perceptibility (since such concerns are moot in a substance\hyp free theory). Crucially, they coexist with structure\hyp reducing markedness constraints, and we will see examples of their interaction throughout the thesis.
+
+In the next section I provide very brief discussion of the \textsc{MaxLink} and \textsc{DepLink} constraint families, and in particular their rôle as substitutes of traditional \textsc{Ident} constraints.
+
+\subsection{The rôle of \textsc{MaxLink} and \textsc{DepLink}}
+\label{sec:role-textscm-textscd}
+
+The constraints \textsc{MaxLink} and \textsc{DepLink}, specific to versions of OT making use of correspondence, essentially demand the preservation of autosegmental associations in input\endash output mappings. They require elements that stand in an input\endash output correspondence relationships also preserve (\ie do not add or remove) associations to other elements; for extensive discussion, see \citet{moren01:_distin}.
+
+We can formulate these constraints using \emph{hybrid logic}, an extension of modal logic that introduces additional machinery in the form of \emph{nominals} (predicates that are only true at one node of the model) and \emph{satisfaction statements}. A satisfaction statement $@_{i}\phi$ means \enquote{$\phi$ is true relative to the state referenced by $i$}, making it possible to describe individual nodes rather than those that happen to satisfy some condition.
+
+One possible hybrid\hyp logic version of \textsc{MaxLink} is given in \cref{def:maxlink}.
+
+\begin{constraint}
+  \label{def:maxlink}
+  \consdef{|\pprop{\textsc{MaxLink}[a]-b}|:=}{(\prop{input}\wedge a\wedge\langle\downarrow\rangle b\wedge\langle\mathbf{io}\rangle i)\to @_{i}\langle\downarrow\rangle b}\\
+  `If a node where $a$ is true has an output correspondent $i$ and dominates a node where $b$ is true, then $i$ dominates a node where $b$ is true'
+\end{constraint}
+
+Note that this is a relatively weak version of \textsc{MaxLink}, since it does not require that the nodes where the predicate is true $b$ in the input and output stand in correspondence to each other, merely that they both be associated with the relevant version of $a$ and both have property $b$.\footnote{Compare the definition of constraints such as \textsc{MaxLink}-\mo[V] by \citet{moren01:_distin}, which requires that, say, a vowel associated with a mora in the input be also associated with \emph{a} mora in the output, not that it be associated with the output correspondent of \emph{the same} mora.} For our purposes, this definition is sufficient, although it is not difficult to give stronger versions.
+
+Formulated as in \cref{def:maxlink}, \textsc{MaxLink} is very similar to the traditional \textsc{Ident-IO}, as well as to \posscite{blaho-diss} \textsc{Ident}, in that it enforces a faithfulness requirement relative to a specific \enquote{source} node rather than merely requiring the existence of correspondence. In particular, it has the property of being vacuously satisfied in case of deletion: if the relevant node has no output correspondent, the last clause of the antecedent is false and, following standard vacuous satisfaction logic, the constraint is satisfied. I will therefore use \textsc{MaxLink} constraints in this thesis in lieu of \textsc{Ident-IO}.
+
+Formally, the constraint \textsc{DepLink} has a very similar definition, the only difference being the use of the relation of output\endash input correspondence rather than vice versa. The importance of this constraint for our purposes lies in the fact that it can be used to derive subtraction as an epiphenomenon of additive morphology \citep[\cfm][]{bye09:_exten_expon_and_non_concat_morph}.
+
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{\rt$_{2}$}} child {node (cman) {A$_{2}$} child
+      {node (cl) {[b]}}} ; \node [left=5em of cman] {A$_{1}$} ;
+    \node[right=10em of k] (k2) {\ipa{\rt$_{2}$}} child {node (cman2)
+      {A$_{1,2}$} child {node {[b]}}} ; \join{cman2}{cman2-1} \delink;
+    \path (cman) -- (cman2) node[pos=0.5] {$\Rightarrow$} ;
+  \end{tikzpicture}
+  \caption{Subtraction as an additive phenomenon}
+\label{fig:subtraction}
+\end{figure}
+
+The basic autosegmental mechanism is shown in \cref{fig:subtraction}. Assume that a feature [b], associate with class node A, is deleted in some process. We can derive this process by postulating a floating A node that must be realized somehow, in the presence of a ban on floating features.\footnote{Note that such a ban can also be construed as an augmentation constraint, requiring the presence of a root node.} Faithfulness compels a coalescence of the two nodes present in the input; however, this would create a violation of \textsc{DepLink}[A]-b. If that constraint is ranked over \textsc{Max}(b), deletion of [b] ensues. The OT mechanism is shown in the tableau in \ref{ex:subtraction-tableau}.
+
+\ex.\label{ex:subtraction-tableau}Subtraction as an epiphenomenon of floating element prefixation\\
+\wraptbl{\begin{OTtableau}{5}
+\OTtoprow[A$_{1}$ + \featurestring{\rt, A$_{2}$, b}]{\textsc{*Float}(A),\textsc{Max}(A),\textsc{DepLink}[A]-b,\textsc{Max}([b]),\textsc{Uniformity}}
+\OTcandrow{A$_{1}$ + \featurestring{\rt, A$_{2}$, b}}{*!,,,,}
+\OTcandrow{\featurestring{\rt, A$_{1}$, b}}{,*!,*,,}
+\OTcandrow{\featurestring{\rt, A$_{1,2}$, b}}{,,*!,,*}
+\OTcandrow{\featurestring{\rt, A$_{1}$}}{,*!,,*,}
+\OTcandrow[\OThand]{\featurestring{\rt, A$_{1,2}$}}{,,,*,*}
+\OTdashes{1,2,4}\OTsolids{3}
+\end{OTtableau}
+}
+
+
+This solution has a number of advantages. First, it is able to derive subtraction as an additive process without recourse to any special mechanisms, rendering it epiphenomenal (\cf \citeauthor{bye09:_exten_expon_and_non_concat_morph} \cite*{bye09:_exten_expon_and_non_concat_morph}). A solution based on \textsc{DepLink} is similar in spirit to that proposed by \citet{bye09:_exten_expon_and_non_concat_morph}, since it also uses the ranking of a faithfulness constraint over \textsc{Max} to derive subtraction; however, their approach requires the postulating of uninterpretable (\ie unpronounceable) features which never appear on the surface, while the present solution uses only well\hyp established mechanisms without too much abstraction.\footnote{Note that nothing in a substance\hyp free approach prevents us from postulating such uninterpetable features: since all features are abstract, the learner might be free to postulate unpronounceable features if the pattern requires it. Therefore, I cannot rule out that \posscite[']{bye09:_exten_expon_and_non_concat_morph} mechanism might in fact be required for some languages, \eg because it can be established on independent grounds that \textsc{DepLink} is ranked in a way that disallows its use for subtraction.}
+
+Another advantage of this mechanism is that it explains why the floating element docks to a host just by using standard \textsc{Max} constraints. An alternative approach could enforce the docking by way of a \textsc{MaxFloat} constraint, which singles out floating features for preservation \citep{wolf2005,wolf-forautosegs}. However, \textsc{MaxFloat} has at least two less desirable properties. First, it is, by itself, not sufficient to enforce the docking for floating features to a root node. This is because if it is to be a faithfulness constraint \citep{moreton2004}, it must assign zero violation marks to the fully faithful candidate, and therefore it must be satisfied by candidates with surface floating features. Thus, it can only enforce docking in concert with \textsc{*Float}\dash
+clearly a more complex construction than the one proposed in \ref{ex:subtraction-tableau}, which also needs \textsc{*Float} but does not introduce new constraint types. Second, \textsc{MaxFloat} has the rather undesirable typological consequence of predicting that some features can only be allowed in surface forms if they are floating (or come from a floating source, depending on the ranking of \textsc{*Float}), under the ranking \dom{\textsc{MaxFlt}([F])}{\dom{*[F]}{\textsc{Max}([F])}}. The mechanism proposed here can derive both the surfacing of floating features, whether it leads to addition or deletion of elements, using standard faithfulness constraints, and thus \textsc{MaxFloat} may be unnecessary as a constraint schema.
+
+This concludes the discussion of some constraint families and patterns of constraint interaction that will be important for the analyses presented below. In the remainder of this chapter I sketch the stratal approach to phonological computation that I will use in this thesis.
+
+\section{Stratal aspects of the computation}
+\label{sec:strat-aspects-comp}
+
+In this thesis I use a broadly stratal approach, which seeks to recapitulate the insights of Lexical Phonology and Morphology \citep[\egm][]{kiparsky82:_lexic_phonol_morph,kiparsky85:_some_lexic_phonol,borowsky86:_topic_englis,mohanan,hargus93:_studies_lexic_phonol,mcmahon00:_lexic_phonol_englis} in an OT\hyp based computational system \citep[\egm][]{kiparsky00:_opacit,kiparsky08:_fenno_swedis,kiparsky11:_chain,bermudez-otero99:_const,bermudez-otero03,bermudez-otero06:_morph_spanis,bermudez-diachr,bermúdez-otero11:_cyclic,bermudez-oterong,plapp99,blumenfeld03,moren06:_thai}.\footnote{Another multiple\hyp level version of OT is Derivational OT \citep[\egm][]{rubach2000,rubach05}, which, however, suffers from the lack of an explicit theory of levels.} Although it is not a primary purpose of this thesis to argue for this particular approach to issues such as morphology\endash phonology interactions and phonological opacity against other proposals, throughout this thesis I will demonstrate that stratal frameworks provide a particularly good fit to some of the data that I deal with in \cref{cha:pembrokeshire-welsh,cha:bothoa-breton}, see in particular \cref{sec:cyclic-effects-lack,sec:except-stress-syna,sec:strat-aspects-both,sec:gliding,sec:phon-driv-prov,sec:except-devo-sandhi}. I take no position on the general applicability of alternative theories here (although in at least one instance I show that output\endash output correspondence appears unable to derive the correct facts, see \cref{sec:front-unro-vowel}). In particular, I do not attempt a comparison between the present approach and frameworks where the gradual derivation proceeds not by morphosyntactically derived levels but by local unfaithful mappings, such as OT-CC \citep{mccarthy07:_hidden,wolf08:_optim_inter} and Harmonic Serialism \citep[\egm][]{hg-hs}, leaving this task to future research \citep[although \cf][]{kiparsky11:_chain}.
+
+For concreteness, I will follow the lead of \citet{bermúdez-otero11:_cyclic,bermudez-oterong} in the main aspects of the architecture. Although the sort of fine\hyp grained data that are often used in stratal reasoning are not available at this point, I will argue that at least in broad outline the data considered in the following chapters are consistent with \citeauthor{bermudez-oterong}'s approach. For the purposes of the present thesis, the following aspects of the stratal architecture are of greatest relevance:
+
+\begin{itemize*}
+\item Tri\hyp stratal organization;
+\item The stem-level syndrome;
+\item Stratal restrictions on Richness of the Base.
+\end{itemize*}
+
+I consider these in order.
+
+\subsection{Tri\hyp stratal organization}
+\label{sec:trihyp-strat-organ}
+
+The most important aspect of stratal architecture is the assumption that the phonological computation over a single word proceeds in three passes, depending on the relevant morphosyntactic structure, with the output of each stratum being fed as (part of) the input to the next one. \citet{bermúdez-otero11:_cyclic} summarizes the approach thus: \blockquote{[T]he attachment of an affix to a root necessarily produces a stem-level category; the attachment of an affix to a stem may produce a stem-level or word-level category depending on the idiosyncratic affiliation of the affix [\ldots]. In contrast, full grammatical words trigger word-level cycles and complete utterances trigger phrase-level cycles.} The stratal affiliation of each process is thus contingent on independent factors, namely the morphosyntactic status of the nodes participating in the spell\hyp out as roots, stems, full words, or utterances. This is crucial because the architecture compels the existence of the three levels in all cases, irrespective of the vagaries of the lexicon and the structure of the paradigms, which play in important rôle in approaches based on output\endash output correspondence or paradigm uniformity \citep{bermúdez-otero11:_cyclic,bermudez-oterong}. The phonological behaviour of an affix can also be, to a large extent, predicted from its morphosyntactic status: for instance, \enquote{thematic} affixes attaching to roots to form morphosyntactically categorized stems, such as those found in Spanish \citep{bermudez-otero06:_morph_spanis}, are clearly predicted to trigger stem\hyp level phonology. This particular prediction is of little use in languages such as English, or indeed Breton and Welsh, where zero stem\hyp forming suffixes are common; nevertheless, in \cref{sec:strat-aspects-both,sec:front-unro-vowel} we will see that morphosyntactic evidence supports the phonological analysis also in these cases.
+
+The tri\hyp stratal hypothesis furnishes two important analytic tools or the purposes of the present thesis, namely across\hyp stratum reranking and the availability of faithfulness. Reranking across strata plays the rôle of opaque rule orderings, allowing us to account for why certain processes happen or fail in certain morphological contexts (see in particular \cref{sec:strat-aspects-both,sec:gliding} below) without recourse to constraint indexation, cophonologies, sympathy, and the like. The availability of faithfulness at later levels contributes to accounting for a wide range of effects. In the data that this thesis is concerned with this is seen mostly in faithfulness to prosodic structure. Since the output of the previous stratum is used as the input at any given level, inputs at later levels contain significant amounts of prosodic structure, unlike the stem level, where prosodic structure can only come from the lexicon (and is rare). For detailed discussion of the repercussions of these features of the framework, see below \cref{sec:cyclic-effects-lack,sec:evid-unev-troch,sec:except-stress-syna,sec:strat-aspects-both,sec:front-unro-vowel}.
+
+\subsection{The stem-level syndrome}
+\label{sec:stem-level-syndrome}
+
+Stem\hyp level derivations possess some exceptional properties that are not found in the case of word\hyp and phrase\hyp level phonology. Specifically, they give rise to \enquote{cyclic} reapplication, \ie a case can be made for cyclic processes applying more than once in the derivation of a given word; such reapplication is usually not assumed to be possible for word- and phrase\hyp level derivations (\citealp[§4.3]{scheer10:_guide_morph}, \emph{pace} \citealp{mchugh90:_kirun_chaga}). Stem\hyp level processes also exhibit particular patterns of non\hyp application, such as outright exceptionality and sensitivity to token frequency \citep[\cf in particular][]{collie07:_englis_strat_optim_theor}.
+
+\citet{bermudez-oterong} provides a comprehensive survey of this \enquote{stem\hyp level syndrome} (\cf also the overview by \citealp{kaisse11:_lexic_phonol}) and broaches some possibilities for deriving the unique properties of stem\hyp level rules from architectural considerations (specifically mechanisms of lexical storage and retrieval). Again, some of the data analysed here support his approach to cyclicity, in that they obey the expected generalizations with respect to the stem\hyp level syndrome; a particularly clear case is found in Bothoa Breton coronal palatalization (\cref{sec:gliding}). Although, as discussed below in \cref{sec:status-contrastivity}, I disagree with some aspects of the theory of the cycle current in approaches based on lexical phonology, in particular with the supposed coupling between \enquote{contrastivity} and the stem level (see \citealp{bermudez-otero07:_marked,kiparsky07:_descr} for specifically OT\hyp based approaches) I will treat the existence of the stem\hyp level syndrome as a given.
+
+\subsection{Stratal aspects of Richness of the Base}
+\label{sec:strat-aspects-richn}
+
+Another feature of stratal approaches is that they put an important restriction of Richness of the Base. Although I assume that Richness of the Base \emph{per se} is a feature of OT\hyp based computation at all levels, its effects become weakened at relatively shallow strata \citep[\cfm][]{kiparsky08:_fenno_swedis,kiparsky11:_chain,bermudez-otero07:_marked}. Normally, the fact that some theory predicts inputs of a particular shape to map to a deviant output is seen as a weakness of that theory, since it essentially relies on stipulations regarding inputs to derive the correct grammar. However, in stratal approaches such less desirable rankings can be allowed at shallow levels if it can be shown that the preceding level will never produce the structure that proves problematic when fed as the input to further computation. An example of this is seen with the analysis of \enquote{devoicing sandhi} in Breton (\cref{sec:except-devo-sandhi}). The analysis crucially relies on certain features of the input (the absence of a C-lar specification of word\hyp final obstruents) which are nevertheless invariably present due to the operation of word\hyp level phonology. (I will discuss the issue of Richness of the Base at shallow levels in somewhat more detail in \cref{sec:contrast-stratal-ot}.)
+
+This concludes the discussion of some crucial aspects of the theory of computation used in the present thesis. Before I finally turn to the analysis in \cref{part:analysis}, I provide a brief discussion of three key issues in substance\hyp free phonology: categoricity, contrast, and markedness.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%

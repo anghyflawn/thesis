@@ -1,0 +1,27 @@
+\savebox{\candone}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{ɡ$_{2}$}}
+    child {node (cman) {C-man}
+      child {node (cl) {[cl]}}}
+    child {node {C-lar}} ;j
+    \node [left=5em of cman] {C-man$_{1}$} ;
+\end{tikzpicture}}
+
+\savebox{\candfour}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{h$_{2}$}}
+    child {node (cman) {C-man$_{1,2}$}}
+    child {node {C-lar}
+      child[dashesfromparent] {node {[vcl]}}};
+\end{tikzpicture}}
+
+\savebox{\candfive}{\begin{tikzpicture}[narrowtree,baseline=(k.base)]
+    \node (k) {\ipa{?$_{2}$}}
+    child {node (cman) {C-man$_{1,2}$}}
+    child {node {C-lar}} ;
+\end{tikzpicture}}
+
+\begin{OTtableau}{3}
+\OTtoprow[\usebox{\candone}]{\textsc{Have}([F]),\textsc{Dep}([vcl]),\textsc{DepLink}(C-lar)([vcl])}
+\OTcandrow[\OThand]{\usebox{\candfour}}{,*,*}
+\OTcandrow{\usebox{\candfive}}{*!,,}
+\OTdashes{2,3}\OTsolids{1}
+\end{OTtableau}

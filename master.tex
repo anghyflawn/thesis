@@ -1,0 +1,298 @@
+\documentclass[openany,12pt,a4paper,oldfontcommands]{memoir}
+\usepackage{adjustbox}
+\usepackage[open,round]{OTtablx-extras}
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=british]{english}
+\setotherlanguages{french,welsh,swedish,german,italian}
+\usepackage[natbib,authordate,backend=biber,useprefix=true]{biblatex-chicago}
+\usepackage[colorlinks=true,unicode=true,linkcolor=blue,filecolor=blue,urlcolor=blue,citecolor=blue,breaklinks=true,pdftitle={Representation and variation in substance-free phonology},pdfauthor={Pavel Iosad}]{hyperref}
+\usepackage{xspace}
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text,SmallCapsFont={Junicode},SmallCapsFeatures={RawFeature=+smcp}]{Gentium Basic}
+\setmonofont[Mapping=tex-text]{Inconsolata}
+\newfontfamily\ipafont{Gentium Plus}
+\usepackage[autostyle,english=british]{csquotes}
+\usepackage{eulervm}
+\usepackage{linguex}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{hyphenat}
+\usepackage{enumitem}
+\usepackage{todonotes}
+\usepackage[multiple]{footmisc}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{pifont}
+\usepackage{mdwlist}
+\usepackage{rotating}
+\usepackage{wasysym}
+\usepackage{stmaryrd}
+\usepackage[normalem]{ulem}
+\usepackage{varwidth}
+\usepackage[author=PI,layout=margin]{fixme}
+\usepackage{eqparbox}
+\usepackage{threeparttable}
+\usepackage{tabulary}
+\usepackage{cleveref}
+\usepackage{ntheorem}
+\usepackage{flafter}
+
+\addbibresource{thesis.bib}
+
+\crefname{ExNo}{example}{examples}
+\crefalias{SubExNo}{ExNo}
+\crefalias{SubSubExNo}{ExNo}
+\crefname{paragraph}{paragraph}{paragraphs}
+
+\newlength\level{}
+\setlength\level{10mm}
+
+\newlength\tableauwidth
+\setlength\tableauwidth{\textwidth}
+\addtolength\tableauwidth{-\Exindent}
+\addtolength\tableauwidth{-\Exlabelwidth}
+\addtolength\tableauwidth{-\Exlabelsep}
+\theoremstyle{break}
+\theoremindent2em
+\theorembodyfont{\upshape}
+\newtheorem{constraint}{Constraint}
+\crefname{constraint}{definition}{definitions}
+
+\usetikzlibrary{trees,positioning,matrix,shapes,backgrounds,fit,calc}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\tikzstyle{fill-node} = [fill=blue!10]
+\tikzstyle{tree} = [parent anchor=south,child anchor=north,sibling distance=6em,text height=1.5ex,text depth=.25ex,on grid,level distance=\level]
+\tikzstyle{hierarchy} = [parent anchor=south,child anchor=north,sibling distance=37em,text height=4ex,text depth=.25ex,on grid,level distance=\level,align=center]
+\tikzstyle{narrow} = [parent anchor=south,child anchor=north,every child/.style={sibling distance=4em},text height=4ex,text depth=.25ex,on grid,level distance=\level,align=center]
+\tikzstyle{narrowtree} = [parent anchor=south,child anchor=north,sibling distance=3em,text height=1.5ex,text depth=.25ex,on grid,level distance=\level]
+\tikzstyle{noline} = [edge from parent/.style={},every child/.style={edge from parent/.style={draw,solid}}]
+\tikzstyle{dashesfromparent} = [edge from parent/.style={draw,dashed},every child/.style={edge from parent/.style={draw,solid}}]
+\widowpenalty=10000
+\clubpenalty=10000
+\setlist{leftmargin=*}
+
+\newsubfloat{table}
+\newsubfloat{figure}
+\setsecnumdepth{paragraph}
+\settocdepth{paragraph}
+
+\xspaceaddexceptions{[]\mo\smo.()}
+\newcommand{\hand}{\ding{43}}
+\newcommand{\gc}{\cellcolor[gray]{.8}}
+\newcommand{\ipa}[1]{{\ipafont #1}}
+\newcommand{\ie}{i.\,e.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+\renewcommand{\eg}{e.\,g.\@\xspace}
+\newcommand{\iem}{i.\,e.}
+\newcommand{\cfm}{cf.}
+\newcommand{\egm}{e.\,g.}
+\providecommand\checkmark{\ding{51}}
+\newcommand\delmark{\ding{55}}
+\newcommand\mb[1]{\eqparbox[t]{examples}{#1}~}
+\newcommand\mbi[1]{\mb{\ipa{#1}}}
+\newcommand\mbp[1]{\mb{\phonint{#1}}}
+\newcommand\posscite[2]['s]{\citeauthor{#2}#1 (\cite*{#2})}
+\newcommand{\twe}[3]{\mbi{#1}\eqparbox[t]{orths}{\emph{#2}}~`#3'} % three-way example
+\newcommand\twp[3]{\mbp{#1}\eqparbox[t]{orths}{\emph{#2}}~`#3'}   % three-way phonetic
+\newcommand{\fwe}[4]{\begin{tabular}[t]{@{}l@{}m{\eqboxwidth{orths}}@{}m{.5\textwidth}@{}}\mbi{[#1]}&\multirow{2}{*}{\emph{#3}}&\multirow{2}{*}{`#4'}\\\mbp{#2}\end{tabular}}
+\newcommand{\suff}[1]{\mbox{/--\ipa{#1}/}}
+\newcommand{\preff}[1]{\mbox{/\ipa{#1}--/}}
+\newcommand{\fea}[2]{\mbox{#1}\hspace{0pt}[#2]}
+\newcommand{\underscore}{\rule[-2pt]{.75cm}{.4pt}\hspace{1ex}}
+\newcommand{\ldbr}{\ensuremath{\llbracket}}
+\newcommand{\rdbr}{\ensuremath{\rrbracket}}
+\newcommand{\phonint}[1]{\ldbr\ipa{#1}\rdbr}
+\newcommand{\textlbracket}{\ensuremath{[}}
+\newcommand{\textrbracket}{\ensuremath{]}}
+\newcommand\featurestring[1]{\ensuremath{\langle}#1\ensuremath{\rangle}}
+\newcommand\featurebox[2]{\eqparbox[t]{featurestrings}{\featurestring{#1}}\hspace{5pt}{\ipa{[#2]}}}
+\newcommand\rt{\ensuremath{\times}}
+\newcommand\mfeaturebox[2]{\begin{minipage}[c]{\eqboxwidth{featurestrings}}#1\end{minipage}\hspace{5pt}\ipa{[#2]}}
+\newcommand\join[3][]{\path[#1] (#2.south) -- (#3.north)}
+\newcommand\midwayarrow[2]{\path (#1) -- (#2) node[pos=0.5] {$\Rightarrow$}}
+\newcommand\alternation[2]{\mbox{\ipa{#1}}\,$\sim$\,\mbox{\ipa{#2}}}
+\newcommand\triang[2]{\draw (#1.south) -- (#2.north west) -- (#2.north east) -- (#1.south)}
+\newcommand\mo{\ipa{μ}\xspace}
+\newcommand\smo{\textsubscript{\ipa{μ}}\xspace}
+\newcommand\smoi[1]{\textsubscript{\ipa{μ}}\ensuremath{_{_{#1}}}}
+\newcommand\owd{\ipa{ω}}
+\newcommand\sy{\ipa{σ}\xspace}
+\newcommand\ssy{\textsubscript{\ipa{σ}}\xspace}
+\newcommand\dom[2]{#1\,\ensuremath{\gg}\,\hspace{0pt}#2}
+\newcommand\us[1]{\ipa{\{#1\}}}
+\newcommand\hd{\textsubscript{Hd}}
+\newcommand\dte{\ipa{Δ}}
+\newcommand\dtei[1]{\dte\textsubscript{#1}}
+\newcommand\fd[2]{(#1)\textsubscript{\us{#2}}}
+\newcommand\troof[2]{\draw (#1.south) -- (#2.north west) -- (#2.north east) -- (#1.south)}
+\newcommand\fstr[2]{\eqparbox{fstrs}{\us{#1}}\hspace{5pt}\ipa{[#2]}}
+\newcommand\wdm{\textsubscript{Wd$^{0}$}}
+\newcommand\xm[1]{\ensuremath{\langle}#1\ensuremath{\rangle}}
+\newcommand\mapping[3]{\ipa{/#1/}~$\Rightarrow$\ipa{[#2]}~$\Rightarrow$ \phonint{#3}}
+\newcommand\vs{\emph{vs.}\@\xspace}
+\newcommand\prop[1]{\mbox{\emph{#1}}}
+\newcommand\pprop[1]{\mbox{#1}}
+\newcommand\consdef[2]{\ensuremath{#1}\\{\ensuremath{#2}}}
+\newcommand\scm{\textsuperscript{\checkmark}}
+
+\long\def\fake#1{\setbox0\vbox{#1}} % do not typeset whatever is inside
+
+\newsavebox{\ChpNumBox}
+\definecolor{ChapBlue}{rgb}{0.00,0.65,0.65}
+\makeatletter
+\newcommand*{\thickhrulefill}{%
+  \leavevmode\leaders\hrule height 1\p@ \hfill \kern \z@}
+\newcommand*\BuildChpNum[2]{%
+  \begin{tabular}[t]{@{}c@{}}
+    \makebox[0pt][c]{#1\strut} \\[.5ex]
+    \colorbox{ChapBlue}{%
+      \rule[-10em]{0pt}{0pt}%
+      \rule{1ex}{0pt}\color{black}#2\strut
+      \rule{1ex}{0pt}}%
+  \end{tabular}}
+\makechapterstyle{BlueBox}{%
+  \renewcommand{\chapnamefont}{\large\scshape}
+  \renewcommand{\chapnumfont}{\Huge\bfseries}
+  \renewcommand{\chaptitlefont}{\raggedright\Huge\bfseries}
+  \setlength{\beforechapskip}{20pt}
+  \setlength{\midchapskip}{26pt}
+  \setlength{\afterchapskip}{40pt}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchapternum}{%
+    \sbox{\ChpNumBox}{%
+      \BuildChpNum{\chapnamefont\@chapapp}%
+      {\chapnumfont\thechapter}}}
+  \renewcommand{\printchapternonum}{%
+    \sbox{\ChpNumBox}{%
+      \BuildChpNum{\chapnamefont\vphantom{\@chapapp}}%
+      {\chapnumfont\hphantom{\thechapter}}}}
+  \renewcommand{\afterchapternum}{}
+  \renewcommand{\printchaptertitle}[1]{%
+    \usebox{\ChpNumBox}\hfill
+    \parbox[t]{\hsize-\wd\ChpNumBox-1em}{%
+      \vspace{\midchapskip}%
+      \thickhrulefill\par
+      \chaptitlefont ##1\par}}%
+}
+\chapterstyle{BlueBox}
+
+\SetProtrusion
+   [ name     = {LocalSettings} ]
+   { encoding = {EU1},
+     family   = {GentiumBasic,Inconsolata,GentiumPlus}  }
+   {
+     {,} = {  ,500},
+      -  = {  ,500},
+     {.} = {  ,500},
+     {`} = {500, },
+     {'} = {, 500},
+     {(} = {500,} ,
+     {)} = {,500}
+   }
+
+\usepackage{url}
+\DeclareRobustCommand\dash{\unskip\nobreak\thinspace\textemdash\allowbreak\thinspace\ignorespaces}
+\DeclareRobustCommand\endash{\unskip\nobreak\textendash\allowbreak\ignorespaces}
+\renewcommand\firstrefdash{}
+\setlength\bibitemsep{0pt}
+\newcommand\orth[1]{<#1>}
+
+\newcommand{\hypcell}[2][10em]{%
+  \begin{varwidth}[c]{#1}%
+    \centering #2%
+  \end{varwidth}}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+
+\newcommand\wraptbl[2][\tableauwidth]{\adjustbox{width=#1}{#2}}
+\newcommand\delink{node[pos=0.5,sloped,rotate=90] {=}}
+
+\hyphenation{dep-link max-link sche-ma-ta}
+
+\newsavebox{\candone}
+\newsavebox{\candtwo}
+\newsavebox{\candthree}
+\newsavebox{\candfour}
+\newsavebox{\candfive}
+\newsavebox{\candsix}
+\newsavebox{\candseven}
+
+\pagestyle{ruled}
+
+\isopage[12]
+\checkandfixthelayout
+
+%%%%% CORRECT PLACEMENT OF DIACRITICS %%%%%%
+
+% Apparently this works better in LuaTeX because you can write Lua and
+% so remember you've done a kern and rekern back after the
+% diacritic. With XeTeX you have to kern back manually
+
+\XeTeXinterchartokenstate=1
+\newXeTeXintercharclass\narrowletters
+\XeTeXcharclass`i=\narrowletters
+\XeTeXcharclass`l=\narrowletters
+\XeTeXcharclass`j=\narrowletters
+\newXeTeXintercharclass\wideletters
+\XeTeXcharclass`m=\wideletters
+\XeTeXcharclass`w=\wideletters
+\newXeTeXintercharclass\lowletters
+\XeTeXcharclass"03C7=\lowletters % VOICELESS UVULAR FRICATIVE
+\newXeTeXintercharclass\unreleased
+\XeTeXcharclass"031A=\unreleased % NO AUDIBLE RELEASE
+\newXeTeXintercharclass\diacritics
+\XeTeXcharclass"0329=\diacritics % SYLLABIC
+\XeTeXcharclass"0306=\diacritics % EXTRA-SHORT
+\XeTeXcharclass"0303=\diacritics % NASALIZED
+\XeTeXcharclass"0325=\diacritics % VOICELESS
+\XeTeXcharclass"031E=\diacritics % LOWERED OR APPROXIMANT
+\XeTeXinterchartoks\narrowletters\diacritics={\kern1.2pt}
+\XeTeXinterchartoks\wideletters\diacritics={\kern-1pt}
+\XeTeXinterchartoks0\unreleased={\kern-1pt}
+\XeTeXinterchartoks\unreleased0={\kern1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%%%%% FRONT MATTER %%%%%%
+
+\include{frontmatter/title}
+\include{frontmatter/frontmatterstart}
+\include{frontmatter/acknowledgements}
+\include{frontmatter/intro}
+
+%%%%% MAIN MATTER %%%%%%%
+
+\mainmatter
+\include{frontmatter/mainmatterstart}
+\include{part1/chap01}
+\include{part1/chap02}
+\include{part1/chap03}
+\include{part1/chap04}
+
+%%%%%%
+
+\include{part2/start}
+\include{part2/intro}
+\include{part2/sir-benfro}
+\include{part2/bothoa}
+\include{part2/discussion}
+\include{part2/conclusion}
+
+\backmatter
+
+\printbibliography
+
+\end{document}
+
+% Local Variables:
+% TeX-master: t
+% End:
